@@ -1,0 +1,10 @@
+{
+  "functions": {},
+  "rewrites": [],
+  "public": true,
+  "github": {
+    "silent": true
+  },
+  "buildCommand": null,
+  "outputDirectory": "FRONTEND"
+}
