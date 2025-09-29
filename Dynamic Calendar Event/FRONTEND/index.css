@@ -1,0 +1,115 @@
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  margin: 0; 
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+  color: #f9f9f9;
+  line-height: 1.6;
+}
+
+header, section, footer {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  color: #cfcfcf;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #1d9bf0, #0066cc);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(29,155,240,0.4);
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scroll-indicator {
+  font-size: 2rem;
+  color: #1d9bf0;
+  margin-top: 40px;
+  animation: bounce 1.5s ease-in-out 3; /* runs 3 times only */
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.scroll-indicator {
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0; /* fade out when done */
+  }
+}
+
+
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.feature:hover {
+  background: #262626;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #999;
+  padding: 30px 20px;
+}
+```
