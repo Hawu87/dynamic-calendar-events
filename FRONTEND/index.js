@@ -3,10 +3,10 @@
 document.getElementById('downloadBtn').addEventListener('click', function(e) {
   e.preventDefault();
   
-  // Configure the backend URL - adjust the port as needed
+  // Configure the backend URL - will be updated after backend deployment
   const backendUrl = window.location.hostname === 'localhost' 
     ? 'http://localhost:8000' 
-    : 'https://YOUR_RAILWAY_APP_URL'; // Replace with deployed backend URL
+    : 'https://your-backend-url.onrender.com'; // Will update with actual Render URL
   const downloadUrl = `${backendUrl}/api/ipos.ics`;
   
   // Create a temporary anchor element to trigger download

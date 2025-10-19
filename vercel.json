@@ -1,10 +1,9 @@
 {
-  "functions": {},
-  "rewrites": [],
-  "public": true,
+  "buildCommand": null,
+  "outputDirectory": "FRONTEND",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "github": {
     "silent": true
-  },
-  "buildCommand": null,
-  "outputDirectory": "FRONTEND"
+  }
 }
