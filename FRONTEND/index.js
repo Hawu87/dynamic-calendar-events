@@ -6,7 +6,7 @@ document.getElementById('downloadBtn').addEventListener('click', function(e) {
   // Configure the backend URL - will be updated after backend deployment
   const backendUrl = window.location.hostname === 'localhost' 
     ? 'http://localhost:8000' 
-    : 'https://your-backend-url.onrender.com'; // Will update with actual Render URL
+    : 'https://dynamic-calendar-events.onrender.com'; // Will update with actual Render URL
   const downloadUrl = `${backendUrl}/api/ipos.ics`;
   
   // Create a temporary anchor element to trigger download
